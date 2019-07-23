@@ -1,3 +1,4 @@
+
 chart("data.csv", "orange");
 
 var datearray = [];
