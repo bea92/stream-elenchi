@@ -2,8 +2,18 @@
 <meta charset="utf-8">
 <style>
 
+
+html {
+  background: #fff;
+}
+
 body {
-  font: 10px sans-serif;
+  background: #fff;
+  font-family: "HK Grotesk";
+  color: #000;
+  overflow-x: hidden;
+  z-index: -2;
+  font-size: 10px;
 }
 
 
@@ -12,9 +22,13 @@ body {
   cursor: pointer;
 }
 
-p {
-  font: 14px arial;
-  color:black;
+body p {
+ font-family: "HK Grotesk";
+ font-weight: 500;
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+
 }
 
   .legend{
@@ -35,32 +49,11 @@ button {
 }
 
 
-html {
-  background: #fff;
-}
-
-body {
-  background: #fff;
-  font-family: "HK Grotesk";
-  color: #000;
-  overflow-x: hidden;
-  z-index: -2;
-}
-
 section {
   margin-bottom: 3rem;
   padding-bottom: 5rem;
 }
 
-#intro {
-  padding: 0;
-  margin-bottom: 0rem;
-  display: flex;
-  align-items: center;
-  /*background-image: url("../images/artwork.png");*/
-  background-position: bottom right;
-  background-repeat: no-repeat;
-}
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
@@ -103,10 +96,7 @@ hr {
       <div class="container">
         <div class="row">
           <div class="col-lg-2 col-lg-8">
-            <h1>Elenchi</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
-
+            <h2>Elenchi</h2>
 <div class="legend"></div>
 <div class="chart"></div>
           </div>
@@ -141,8 +131,9 @@ var tooltip = d3.select("body")
     .style("position", "absolute")
     .style("z-index", "20")
     .style("visibility", "visible")
-    .style("top", "200px")
+    .style("top", "400px")
     .style("left", "50px");
+
 
 var x = d3.time.scale()
     .range([0, width]);
@@ -270,8 +261,8 @@ var graph = d3.csv(csvpath, function(data) {
         .style("z-index", "19")
         .style("width", "1px")
         .style("height", "500px")
-        .style("top", "210px")
-        .style("bottom", "30px")
+        .style("top", "110px")
+        .style("bottom", "10px")
         .style("left", "0px")
         .style("background", "black");
 
