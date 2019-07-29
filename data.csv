@@ -1,165 +1,169 @@
 key,value,date
-norm f,0,1943
-norm f,0,1944
-norm f,3.1,1945
-norm f,12.3,1946
-norm f,10.9,1947
-norm f,9.5,1948
-norm f,7.9,1949
-norm f,5.4,1950
-norm f,4.3,1951
-norm f,16.4,1952
-norm f,13.2,1953
-norm f,9.7,1954
-norm f,1.1,1955
-norm f,0,1956
-norm f,3.7,1957
-norm f,30.9,1958
-norm f,0,1959
-norm f,0,1960
-norm f,0,1961
-norm f,0,1962
-norm f,8,1963
-norm f,2.4,1964
-norm f,6.6,1965
-norm f,0,1966
-norm f,0,1967
-norm f,0,1968
-norm f,0,1969
-norm f,0,1970
-norm f,0,1971
-norm f,0,1972
-norm f,0,1973
-norm f,0,1974
-norm f,7.2,1975
-norm f,1.7,1976
-norm f,7.9,1977
-norm f,0,1978
-norm f,0,1979
-norm f,0,1980
-norm f,0,1981
-norm f,6.8,1982
-norm f,18.6,1983
-norm m,0,1943
-norm m,0,1944
-norm m,0.5,1945
-norm m,3.9,1946
-norm m,1.2,1947
-norm m,1,1948
-norm m,1.1,1949
-norm m,1.5,1950
-norm m,1,1951
-norm m,2.9,1952
-norm m,3,1953
-norm m,0,1954
-norm m,0,1955
-norm m,0,1956
-norm m,0.1,1957
-norm m,6.2,1958
-norm m,0.7,1959
-norm m,0,1960
-norm m,0,1961
-norm m,0,1962
-norm m,4.2,1963
-norm m,0,1964
-norm m,2.9,1965
-norm m,0,1966
-norm m,0,1967
-norm m,0,1968
-norm m,0,1969
-norm m,0,1970
-norm m,0,1971
-norm m,0,1972
-norm m,0,1973
-norm m,0,1974
-norm m,0,1975
-norm m,2,1976
-norm m,0,1977
-norm m,0,1978
-norm m,0,1979
-norm m,0,1980
-norm m,1.1,1981
-norm m,0,1982
-norm m,8,1983
-norm p,2.5,1943
-norm p,0,1944
-norm p,2.1,1945
-norm p,4.6,1946
-norm p,4.5,1947
-norm p,8.4,1948
-norm p,4.1,1949
-norm p,1.4,1950
-norm p,0,1951
-norm p,2.4,1952
-norm p,10.5,1953
-norm p,16.5,1954
-norm p,0.4,1955
-norm p,0,1956
-norm p,0.7,1957
-norm p,8.8,1958
-norm p,0.7,1959
-norm p,0,1960
-norm p,0,1961
-norm p,0,1962
-norm p,15.2,1963
-norm p,3.1,1964
-norm p,7.1,1965
-norm p,0,1966
-norm p,0,1967
-norm p,0,1968
-norm p,0,1969
-norm p,0,1970
-norm p,0,1971
-norm p,0,1972
-norm p,0,1973
-norm p,0,1974
-norm p,7.7,1975
-norm p,5.2,1976
-norm p,0,1977
-norm p,0,1978
-norm p,0,1979
-norm p,0,1980
-norm p,1.1,1981
-norm p,5.3,1982
-norm p,9.8,1983
-norm s,7.4,1943
-norm s,0,1944
-norm s,4.1,1945
-norm s,6.9,1946
-norm s,4.2,1947
-norm s,6.8,1948
-norm s,11.2,1949
-norm s,1.9,1950
-norm s,1.4,1951
-norm s,5.1,1952
-norm s,4.8,1953
-norm s,7.7,1954
-norm s,2.3,1955
-norm s,4.6,1956
-norm s,3.1,1957
-norm s,23.1,1958
-norm s,2.9,1959
-norm s,0,1960
-norm s,0,1961
-norm s,0,1962
-norm s,8.2,1963
-norm s,5.7,1964
-norm s,5.6,1965
-norm s,0,1966
-norm s,0,1967
-norm s,0,1968
-norm s,0,1969
-norm s,0,1970
-norm s,0,1971
-norm s,0,1972
-norm s,0,1973
-norm s,0,1974
-norm s,1,1975
-norm s,4,1976
-norm s,3.9,1977
-norm s,0,1978
-norm s,0,1979
-norm s,2.1,1980
-norm s,0,1981
-norm s,0,1982
-norm s,32.4,1983
+frasi,0,1943
+frasi,0,1944
+frasi,22.612,1945
+frasi,26.365,1946
+frasi,28.456,1947
+frasi,29.631,1948
+frasi,25.07,1949
+frasi,14.064,1950
+frasi,18.869,1951
+frasi,50.494,1952
+frasi,52.737,1953
+frasi,32.468,1954
+frasi,2.414,1955
+frasi,0,1956
+frasi,13.802,1957
+frasi,88.129,1958
+frasi,4.812,1959
+frasi,0,1960
+frasi,0,1961
+frasi,3.868,1962
+frasi,28.335,1963
+frasi,6.352,1964
+frasi,24.489,1965
+frasi,3.358,1966
+frasi,37.758,1967
+frasi,9.723,1968
+frasi,2.223,1969
+frasi,0,1970
+frasi,4.881,1971
+frasi,14.857,1972
+frasi,6.479,1973
+frasi,11.708,1974
+frasi,51.012,1975
+frasi,6.874,1976
+frasi,22.523,1977
+frasi,1.635,1978
+frasi,4.899,1979
+frasi,11.499,1980
+frasi,3.698,1981
+frasi,23.121,1982
+frasi,56.961,1983
+frasi,15.767,1984
+misto,0,1943
+misto,0,1944
+misto,1.618,1945
+misto,6.379,1946
+misto,2.78,1947
+misto,1.389,1948
+misto,2.055,1949
+misto,2.084,1950
+misto,2.453,1951
+misto,3.268,1952
+misto,5.367,1953
+misto,0,1954
+misto,0,1955
+misto,0,1956
+misto,1.974,1957
+misto,12.85,1958
+misto,2.118,1959
+misto,0,1960
+misto,0,1961
+misto,2.804,1962
+misto,8.107,1963
+misto,0,1964
+misto,14.528,1965
+misto,0,1966
+misto,4.285,1967
+misto,1.961,1968
+misto,1.346,1969
+misto,0,1970
+misto,0.453,1971
+misto,2.583,1972
+misto,0.985,1973
+misto,1.148,1974
+misto,1.189,1975
+misto,1.434,1976
+misto,3.629,1977
+misto,2.773,1978
+misto,0.289,1979
+misto,0,1980
+misto,5.015,1981
+misto,6.13,1982
+misto,12.13,1983
+misto,1.285,1984
+parole,0.885,1943
+parole,0,1944
+parole,0.79,1945
+parole,5.901,1946
+parole,5.179,1947
+parole,5.545,1948
+parole,3.284,1949
+parole,0.991,1950
+parole,0,1951
+parole,1.706,1952
+parole,7.241,1953
+parole,9.514,1954
+parole,0.186,1955
+parole,0,1956
+parole,1.001,1957
+parole,5.212,1958
+parole,1.623,1959
+parole,0,1960
+parole,0,1961
+parole,0.562,1962
+parole,14.667,1963
+parole,2.063,1964
+parole,20.774,1965
+parole,0.809,1966
+parole,6.947,1967
+parole,1.017,1968
+parole,1.001,1969
+parole,0,1970
+parole,0.62,1971
+parole,3.352,1972
+parole,0.813,1973
+parole,0.861,1974
+parole,4.885,1975
+parole,4.864,1976
+parole,0.982,1977
+parole,2.371,1978
+parole,0.783,1979
+parole,0.781,1980
+parole,5.51,1981
+parole,6.253,1982
+parole,8.883,1983
+parole,4.837,1984
+sintagmi,5.608,1943
+sintagmi,0,1944
+sintagmi,6.711,1945
+sintagmi,9.853,1946
+sintagmi,7.952,1947
+sintagmi,15.412,1948
+sintagmi,17.266,1949
+sintagmi,2.166,1950
+sintagmi,5.151,1951
+sintagmi,8.318,1952
+sintagmi,6.587,1953
+sintagmi,9.157,1954
+sintagmi,2.887,1955
+sintagmi,7.301,1956
+sintagmi,7.435,1957
+sintagmi,60.948,1958
+sintagmi,11.366,1959
+sintagmi,0,1960
+sintagmi,0,1961
+sintagmi,4.598,1962
+sintagmi,14.109,1963
+sintagmi,17.172,1964
+sintagmi,22.367,1965
+sintagmi,7.409,1966
+sintagmi,16.463,1967
+sintagmi,18.272,1968
+sintagmi,2.57,1969
+sintagmi,0,1970
+sintagmi,4.117,1971
+sintagmi,5.582,1972
+sintagmi,2.182,1973
+sintagmi,3.611,1974
+sintagmi,3.866,1975
+sintagmi,11.594,1976
+sintagmi,8.505,1977
+sintagmi,2.843,1978
+sintagmi,2.178,1979
+sintagmi,7.007,1980
+sintagmi,13.872,1981
+sintagmi,2.332,1982
+sintagmi,57.896,1983
+sintagmi,19.556,1984

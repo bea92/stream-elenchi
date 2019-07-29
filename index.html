@@ -17,7 +17,7 @@ body {
 }
 
 
-.chart { 
+.chart {
   background: #fff;
   cursor: pointer;
 }
@@ -139,7 +139,7 @@ var x = d3.time.scale()
     .range([0, width]);
 
 var y = d3.scale.linear()
-    .range([height, 0]);
+    .range([height, 0.0]);
 
 var z = d3.scale.ordinal()
     .range(colorrange);
@@ -162,6 +162,7 @@ var yAxis = d3.svg.axis()
 
 var stack = d3.layout.stack()
     .offset("Silhouette")
+    .order("Descending")
     .values(function(d) { return d.values; })
     .x(function(d) { return d.date; })
     .y(function(d) { return d.value; });
@@ -170,7 +171,7 @@ var nest = d3.nest()
     .key(function(d) { return d.key; });
 
 var area = d3.svg.area()
-    .interpolate("basis")
+    .interpolate("cardinal")
     .x(function(d) { return x(d.date); })
     .y0(function(d) { return y(+d.y0); })
     .y1(function(d) { return y(+d.y0 + d.y); });
@@ -189,8 +190,8 @@ var graph = d3.csv(csvpath, function(data) {
 
   var layers = stack(nest.entries(data));
 
-  x.domain(d3.extent(data, function(d) { return d.date; }));
-  y.domain([0.0, d3.max(data, function(d) { return d.y0 + d.y; })]);
+  x.domain(d3.extent(data, function(d) { return +d.date; }));
+  y.domain([0, d3.max(data, function(d) { return d.y0 + d.y; })]);
 
   svg.selectAll(".layer")
       .data(layers)
@@ -240,9 +241,9 @@ var graph = d3.csv(csvpath, function(data) {
       d3.select(this)
       .classed("hover", true)
       .attr("stroke", strokecolor)
-      .attr("stroke-width", "1px"), 
+      .attr("stroke-width", "1px"),
       tooltip.html( "<p>" + d.key + "<br>" + pro + "</p>" ).style("visibility", "visible");
-      
+
     })
     .on("mouseout", function(d, i) {
      svg.selectAll(".layer")
@@ -253,7 +254,7 @@ var graph = d3.csv(csvpath, function(data) {
       .classed("hover", false)
       .attr("stroke-width", "0px"), tooltip.html( "<p>" + d.key + "<br>" + pro + "</p>" ).style("visibility", "hidden");
   })
-    
+
   var vertical = d3.select(".chart")
         .append("div")
         .attr("class", "remove")
@@ -267,11 +268,11 @@ var graph = d3.csv(csvpath, function(data) {
         .style("background", "black");
 
   d3.select(".chart")
-      .on("mousemove", function(){  
+      .on("mousemove", function(){
          mousex = d3.mouse(this);
          mousex = mousex[0] + 5;
          vertical.style("left", mousex + "px" )})
-      .on("mouseover", function(){  
+      .on("mouseover", function(){
          mousex = d3.mouse(this);
          mousex = mousex[0] + 5;
          vertical.style("left", mousex + "px")});
