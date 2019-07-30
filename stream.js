@@ -23,8 +23,8 @@ var tooltip = d3.select("body")
     .style("position", "absolute")
     .style("z-index", "20")
     .style("visibility", "visible")
-    .style("top", "50%")
-    .style("left", "3%");
+    .style("top", "100%")
+    .style("left", "10%");
 
 
 var x = d3.time.scale()
@@ -170,15 +170,5 @@ var graph = d3.csv(csvpath, function(data) {
   //        vertical.style("left", mousex + "px")});
 
 
-      // Handmade legend
-svg.append("text").attr("x", 10).attr("y", 30).text("How to read").style("font-size", "18px").attr("alignment-baseline","middle")
-svg.append("circle").attr("cx",20).attr("cy",60).attr("r", 6).style("fill", "gold")
-svg.append("circle").attr("cx",20).attr("cy",90).attr("r", 6).style("fill", "aquamarine")
-svg.append("circle").attr("cx",20).attr("cy",120).attr("r", 6).style("fill", "greenyellow")
-svg.append("circle").attr("cx",20).attr("cy",150).attr("r", 6).style("fill", "deeppink")
-svg.append("text").attr("x", 40).attr("y", 60).text("sintagmi").style("font-size", "15px").attr("alignment-baseline","middle")
-svg.append("text").attr("x", 40).attr("y", 90).text("parole").style("font-size", "15px").attr("alignment-baseline","middle")
-svg.append("text").attr("x", 40).attr("y", 120).text("misto").style("font-size", "15px").attr("alignment-baseline","middle")
-svg.append("text").attr("x", 40).attr("y", 150).text("frasi").style("font-size", "15px").attr("alignment-baseline","middle")
 });
 }
