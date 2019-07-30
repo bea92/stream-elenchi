@@ -100,7 +100,7 @@ a:active{
 } */
 
 .chart {
-  background: #f5f5f5;
+  background: #F8F8F8;
   cursor: pointer;
   border:1px solid black;
   width:100%;
@@ -170,7 +170,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Crimson text"
 }
 
@@ -263,6 +263,8 @@ hr {
   opacity: 0;
   transition: all 0.3s ease;
   pointer-events: none;
+  border:1px solid black;
+  z-index:99999;
 }
 
 #tooltip p{
@@ -300,7 +302,7 @@ hr {
 }
 @media screen and (min-width: 1200px) {
   h1{
-    font-size:42px;
+    font-size:4rem;
     font-style: italic;
   }
   h2{

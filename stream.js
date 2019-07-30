@@ -18,62 +18,14 @@ var margin = {top: 20, right: 40, bottom: 30, left: 30};
 var width = document.body.clientWidth - margin.left - margin.right;
 var height = 500 - margin.top - margin.bottom;
 
-// var tooltip = d3.select("body")
-//     .append("div")
-//     .attr("class", "remove")
-//     .style("position", "absolute")
-//     .style("z-index", "20")
-//     .style("visibility", "visible")
-//     .style("top", "100%")
-//     .style("left", "10%");
-
-// tooltip
-    d3.select('path').on("mouseenter", function(d){
-
-      d3.select(this).style("opacity", 1)
-
-
-      var tooltip = d3.select("#tooltip").style("opacity", 1)
-
-
-      tooltip.append("p")
-      .classed("info", true)
-      .classed("date", true)
-      .text(formatDate(d.date))
-
-       tooltip.append("p")
-      .classed("info", true)
-      .text(" " +d.date + ",")
-      .attr("transform", "translate(0, " + 24 + ")")
-
-      tooltip.append("p")
-      .classed("info", true)
-      .text(d.value + " " + d.date)
-      .attr("transform", "translate(0, " + 12 + ")")
-
-
-      // tooltip.append("p")
-      // .classed("info", true)
-      // .text("by a " + d.age + " years old")
-      // .attr("transform", "translate(0, " + 58 + ")")
-
-      // tooltip.append("p")
-      // .classed("info", true)
-      // .text(d.race + " " + d.gender + ", ")
-      // .attr("transform", "translate(0, " + 70 + ")")
-
-      // tooltip.append("p")
-      // .classed("info", true)
-      // .text("mental illness: " + d.type)
-      // .attr("transform", "translate(0, " + 46 + ")")
-    })
-
-    d3.selectAll('.circ').on("mouseleave", function(d){
-
-      d3.selectAll(".circ").style("opacity", 1)
-      d3.select("#tooltip").style("opacity", 0)
-      d3.selectAll("#tooltip p").remove()
-    })
+var tooltip = d3.select("body")
+    .append("p")
+    .attr("class", "remove")
+    .style("position", "absolute")
+    .style("z-index", "20")
+    .style("visibility", "visible")
+    // .style("top", "100%")
+    // .style("left", "10%");
 
 
 var x = d3.time.scale()
@@ -162,7 +114,7 @@ var graph = d3.csv(csvpath, function(data) {
       svg.selectAll(".layer").transition()
       .duration(250)
       .attr("opacity", function(d, j) {
-        return j != i ? 0.6 : 1;
+        return j != i ? 0.3 : 1;
     })})
 
     .on("mousemove", function(d, i) {
