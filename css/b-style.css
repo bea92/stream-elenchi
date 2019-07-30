@@ -1,0 +1,221 @@
+html {
+  background: #F9EFE3;
+}
+
+body {
+  background: #fff;
+  font-family: "HK Grotesk", sans-serif;
+  color: #0A0101;
+  overflow-x: hidden;
+  z-index: -2;
+}
+
+section {
+  margin-bottom: 3rem;
+  padding-bottom: 5rem;
+}
+
+a, a:visited, a:focus {
+  color: #EA1515;
+}
+
+a:hover {
+  color: #B30000;
+  text-decoration: none;
+}
+
+hr {
+  border-top: 1px solid #0A0101;
+}
+
+
+.disabled {
+  display: none;
+}
+
+#sections {
+  position: absolute;
+  top: 0;
+  height: 2rem;
+  background: red;
+  z-index: -1;
+}
+
+#content {
+  z-index: 0;
+}
+
+
+#bees #legend {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+svg {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  shape-rendering: crispEdges;
+}
+
+.domain {
+  stroke: #777;
+  display: none;
+}
+
+.tick text {
+  font-size: 0.7rem;
+  font-family: "HK Grotesk",
+  sans-serif;
+}
+
+.yAxis .tick line, .xAxis .tick line {
+  stroke-width: 0.5;
+  stroke: #777;
+}
+
+.xAxis .tick line {
+  stroke-dasharray: 2,2;
+}
+
+.timelineAxis .tick line {
+  stroke-dasharray: 2,2;
+  stroke: #777;
+}
+
+.tick text {
+  fill: #777;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.buttons p {
+  margin-right: 0.5rem;
+}
+
+.bloodAxis .tick line, .xAxis .tick line {
+  stroke-width: 1;
+  stroke: #777;
+}
+
+button {
+  background: #fff;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius: 1px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+  outline: none;
+  font-family: "HK Grotesk", sans-serif;
+  font-size: 1rem;
+}
+
+button:focus {
+  outline: none;
+  background-color: #000;
+}
+
+.circ {
+  transition: opacity 0.3s ease;
+  border: 1px solid black;
+}
+
+
+.circ:hover {
+  cursor: pointer;
+  stroke: black;
+}
+
+.button-label {
+  font-family: "HK Grotesk", sans-serif;
+  font-size: 0.9rem;
+}
+
+.b_sel {
+  border: 1px solid #000;
+  color: #0A0101;
+}
+
+.b_sel:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.d_sel {
+  border: 1px solid #000;
+  color: #000;
+}
+
+.d_sel:hover {
+  background: black;
+  color:white;
+}
+
+.d_del {
+  background: black;
+  color: white;
+  border: 1px solid black;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: normal;
+}
+
+.selected {
+  color: white;
+}
+
+.source {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+#tooltip {
+  position: fixed;
+  bottom: 3rem;
+  left: 3rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+#tooltip p{
+  margin-right: 0.2rem;
+  line-height: 1.3;
+  text-transform: lowercase;
+  font-size: 1rem;
+  transition: .3s ease;
+  display: inline-block;
+  font-family: "HK Grotesk", sans-serif;
+  text-transform: uppercase;
+}
+@font-face {
+    font-family: 'hk-grotesk-bold';
+    src: url('hkgrotesk_bold.eot');
+    src: url('hkgrotesk_bold.eot?#iefix') format('embedded-opentype'),
+         url('hkgrotesk_bold.woff') format('woff'),
+         url('hkgrotesk_bold.ttf') format('truetype'),
+         url('hkgrotesk_bold.svg#hk-grotesk-bold') format('svg');
+}
+
+@font-face {
+    font-family: 'hk-grotesk-regular';
+    src: url('hkgrotesk_regular.eot');
+    src: url('hkgrotesk_regular.eot?#iefix') format('embedded-opentype'),
+         url('hkgrotesk_regular.woff') format('woff'),
+         url('hkgrotesk_regular.ttf') format('truetype'),
+         url('hkgrotesk_regular.svg#hk-grotesk-regular') format('svg');
+}

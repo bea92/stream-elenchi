@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<meta charset="utf-8">
 <head>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
@@ -8,41 +8,54 @@
 </head>
 <body>
 
-
   <div class="nav float-md-right">
     <a class="nav-link" href="index.html">&larr; 1</a>
       <a class="active nav-link" href="scheda2.html">2</a>
   </div>
-  <!--
-  <a class="active" href="index.html"><div class="nav-link">1</div></a>
-  <a href="scheda2.html"><div class="nav-link">2</div></a>
-</div> -->
 
-<content id="content">
-  <div>
+  <content id="content">
     <a class="nav-link" href="territorio.html">&larr; territorio</a>
-  </div>
-  <section id="intro">
-    <div class="container-fluid">
+    <section id="intro">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8 col-md-12 col-sm-12 ">
+            <h1>La metamorfosi</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Massa sapien faucibus et molestie. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Turpis massa sed elementum tempus egestas sed sed. Erat pellentesque adipiscing commodo elit at imperdiet. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Mauris a diam maecenas sed enim ut sem viverra. Adipiscing commodo elit at imperdiet dui accumsan sit amet. Tortor consequat id porta nibh venenatis cras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="chart">
+
+    <div id="bees">
+      <div id="legend" class="col-lg-8 col-md-12 col-sm-12">
+        <h6>Titolo della visualizzazione</h6>
+        <p class="misto">misto</p>
+        <p class="frasi">frasi</p>
+        <p class="sintagma">sintagmi</p>
+        <p class="parole">parole</p>
+      </div>
+      <div id="bees-ui" class="offset-lg-2 col-lg-8"></div>
+            <div id="tooltip"></div>
+
+            </div>
+  </section>
+
+  <section id="conclusion">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-12 col-sm-12 ">
-          <h1>La metamorfosi</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Massa sapien faucibus et molestie. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Turpis massa sed elementum tempus egestas sed sed. Erat pellentesque adipiscing commodo elit at imperdiet. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Mauris a diam maecenas sed enim ut sem viverra. Adipiscing commodo elit at imperdiet dui accumsan sit amet. Tortor consequat id porta nibh venenatis cras.</p>
+        <div class="offset-lg-2 col-lg-8">
+
         </div>
       </div>
     </div>
   </section>
 
-  <section id="stream">
-    <div class="container-fluid">
-      <div class="legend"></div>
-      <div class="chart"></div>
-    </div>
-  </section>
-
   <section id="zoom1">
     <div class="container-fluid">
-      <h2>Finding numero 2</h2>
+      <h2>Finding numero 1</h2>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -61,7 +74,7 @@
 
       <section id="zoom2">
         <div class="container-fluid">
-          <h2>Finding numero 1</h2>
+          <h2>Finding numero 2</h2>
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
 
@@ -80,7 +93,20 @@
             </div>
 
           </section>
-        </content>
-<script src="stream.js"></script>
-      </body>
-      </html>
+        </div>
+
+
+</content>
+<!-- <div id="alert" class="d-sm-none"><h4>For the best experience of this website, a tablet or computer is best suited.</h4></div> -->
+<!-- Bootstrap core JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+<script src="js/bees.js"></script>
+
+</body>
+
+</html>

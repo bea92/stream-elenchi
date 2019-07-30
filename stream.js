@@ -99,13 +99,9 @@ var graph = d3.csv(csvpath, function(data) {
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis);
 
-  // svg.append("g")
-  //     .attr("class", "y axis")
-  //     .attr("transform", "translate(" + width + ", 0)")
-  //     .call(yAxis.orient("right"));
 
   svg.append("g")
-      .attr("class", "y axis")
+      .attr("class", "yAxis")
       .call(yAxis.orient("left"));
 
   svg.selectAll(".layer")
