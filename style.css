@@ -183,6 +183,75 @@ hr {
   color: #000;
 }
 
+.legend > .desc {
+  padding-right: 1rem;
+}
+
+#legend {
+  margin-top: 4rem;
+}
+
+#legend > * {
+  font-size: 0.9rem;
+}
+
+#legend p, #legend h6 {
+  margin: 0;
+}
+
+#legend p {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+#bees #legend {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.label {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.misto::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 0.6rem;
+  margin-right: 0.5rem;
+  background: greenyellow;
+}
+
+.frasi::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 0.6rem;
+  margin-right: 0.5rem;
+  background: deeppink;
+}
+
+
+.sintagma::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 0.6rem;
+  margin-right: 0.5rem;
+  background: gold;
+}
+
+.parole::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 0.6rem;
+  margin-right: 0.5rem;
+  background: aquamarine;
+}
+
 
 
 @media screen and (min-width: 480px) {
