@@ -26,23 +26,26 @@ section p{
 }
 
 
-li a {
+a {
   color: aquamarine;
   font-family: "Helvetica", sans-serif;
   font-size: 24px;
   font-weight: 700;
+  align-items: baseline;
 }
 
-li a.active {
-  color: aquamarine;
+a.active {
+  color: deeppink;
   font-family: "Helvetica", sans-serif;
   font-size: 24px;
   font-weight: 700;
   text-decoration: underline;
+  align-items: baseline;
 }
 
-li a:hover:not(.active) {
+a:hover:not(.active) {
   color: aquamarine;
+  align-items: baseline;
 
 }
 /*
@@ -63,8 +66,8 @@ a:active{
 }*/
 
 .nav {
+
   top: 0;
-  width: 10%;
   z-index: 9999;
 }
 
@@ -72,6 +75,7 @@ a:active{
   font-family: "Helvetica", sans-serif;
   font-size: 24px;
   font-weight: 700;
+  margin:1rem;
 }
 
 #zoom1{
