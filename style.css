@@ -106,7 +106,7 @@ margin:auto;
 
 
 #intro{
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   margin-left: 1rem;
   width:90%;
   align-content: center;
@@ -150,7 +150,6 @@ button {
 
 section {
   margin-bottom: 3rem;
-  padding-bottom: 5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -182,4 +181,37 @@ hr {
 ::selection {
   background: aquamarine;
   color: #000;
+}
+
+
+
+@media screen and (min-width: 480px) {
+
+  h1{
+    font-size:20px;
+  }
+  #intro p{
+   font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #intro p{
+   font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1{
+    font-size:21px;
+  }
+  #intro p{
+   font-size: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1{
+    font-size:34px;
+  }
+  #intro p{
+   font-size: 18px;
+  }
 }

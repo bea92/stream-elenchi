@@ -3,6 +3,7 @@
 <head>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
+<script src="http://d3js.org/d3.v2.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -27,7 +28,15 @@
 
     <section id="stream">
       <div class="container-fluid">
-        <div class="legend"></div>
+        <div class="row">
+  <div id="legend" class="col-6">
+    <h6>Tipo di elenco</h6>
+    <p class="misto">misto</p>
+    <p class="frasi">frasi</p>
+    <p class="sintagma">sintagmi</p>
+    <p class="parole">parole</p>
+  </div>
+</div>
         <div class="chart"></div>
       </div>
     </section>
