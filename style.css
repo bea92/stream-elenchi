@@ -10,25 +10,125 @@ body {
   overflow-x: hidden;
   z-index: -2;
   font-size: 10px;
+  text-align: left;
 }
 
+body p {
+  font-family: "HK Grotesk";
+  font-weight: 500;
+  color: #000;
+  font-size: 14px;
+}
+
+section p{
+  font-family: 'Crimson Text', serif;
+  font-size: 24px;
+}
+
+
+li a {
+  color: aquamarine;
+  font-family: "Helvetica", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+li a.active {
+  color: aquamarine;
+  font-family: "Helvetica", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+li a:hover:not(.active) {
+  color: aquamarine;
+
+}
+/*
+
+
+.nav a {
+  color: aquamarine;
+}
+
+a:hover {
+  color: deeppink;
+  transition: color 0.3s ease
+}
+
+a:active{
+  color: deeppink;
+  text-decoration: underline;
+}*/
+
+.nav {
+  top: 0;
+  width: 10%;
+  z-index: 9999;
+}
+
+.nav-link {
+  font-family: "Helvetica", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#zoom1{
+height:100%;
+margin-left: 1rem;
+}
+
+#zoom1 img{
+display: inline-block;
+border: 2px solid black;
+width:100%;
+height:auto;
+margin:auto;
+}
+
+#zoom2{
+height:100%;
+margin-left: 1rem;
+}
+
+#zoom2 img{
+display: inline-block;
+border: 2px solid black;
+width:100%;
+height:auto;
+margin:auto;
+}
+
+
+#intro{
+  margin-top: 2rem;
+  margin-left: 1rem;
+  width:90%;
+  align-content: center;
+}
+
+#intro p{
+  font-family: 'Crimson Text', serif;
+  font-size: 24px;
+}
+
+
+#stream .layer{
+  cursor: pointer;
+}
+
+/* #sections {
+  position: absolute;
+} */
 
 .chart {
   background: #fff;
   cursor: pointer;
 }
 
-body p {
- font-family: "HK Grotesk";
- font-weight: 500;
-  color: #000;
-  font-size: 14px;
-  text-transform: uppercase;
-
-}
-
-  .legend{
-padding: 5px;
+.legend{
+  padding: 5px;
 }
 
 .axis path, .axis line {
@@ -44,7 +144,6 @@ button {
   top: 10px;
 }
 
-
 section {
   margin-bottom: 3rem;
   padding-bottom: 5rem;
@@ -52,15 +151,6 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
-  /*font-family: -apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  Roboto,
-  Oxygen-Sans,
-  Ubuntu,
-  Cantarell,
-  "Helvetica Neue",
-  sans-serif;*/
   font-family: "HK Grotesk", sans-serif;
   font-weight: 700;
   letter-spacing: -1px;
@@ -69,10 +159,12 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 5rem;
   line-height: 0.9;
+  font-family: "Crimson text"
 }
 
 h2 {
   font-size: 3rem;
+  font-family: "Crimson text"
 }
 
 h6 {
@@ -81,4 +173,9 @@ h6 {
 
 hr {
   margin: 2rem 0;
+}
+
+::selection {
+  background: aquamarine;
+  color: #000;
 }

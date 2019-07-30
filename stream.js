@@ -23,8 +23,8 @@ var tooltip = d3.select("body")
     .style("position", "absolute")
     .style("z-index", "20")
     .style("visibility", "visible")
-    .style("top", "400px")
-    .style("left", "50px");
+    .style("top", "50%")
+    .style("left", "3%");
 
 
 var x = d3.time.scale()
@@ -159,15 +159,15 @@ var graph = d3.csv(csvpath, function(data) {
         .style("left", "0px")
         .style("background", "black");
 
-  d3.select(".chart")
-      .on("mousemove", function(){
-         mousex = d3.mouse(this);
-         mousex = mousex[0] + 5;
-         vertical.style("left", mousex + "px" )})
-      .on("mouseover", function(){
-         mousex = d3.mouse(this);
-         mousex = mousex[0] + 5;
-         vertical.style("left", mousex + "px")});
+  // d3.select(".chart")
+  //     .on("mousemove", function(){
+  //        mousex = d3.mouse(this);
+  //        mousex = mousex[0] + 5;
+  //        vertical.style("left", mousex + "px" )})
+  //     .on("mouseover", function(){
+  //        mousex = d3.mouse(this);
+  //        mousex = mousex[0] + 5;
+  //        vertical.style("left", mousex + "px")});
 
 
       // Handmade legend
