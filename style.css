@@ -91,7 +91,7 @@ a:hover:not(.active) {
 
 #zoom1{
 height:100%;
-margin: 3rem;
+margin: 5rem;
 }
 
 #zoom1 img{
@@ -104,7 +104,7 @@ margin:auto;
 
 #zoom2{
 height:100%;
-margin:3rem;
+margin:5rem;
 }
 
 #zoom2 img{
@@ -146,7 +146,7 @@ h2 {
 }
 
 h6 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0;
 }
@@ -161,11 +161,11 @@ hr {
 }
 
 #legend > * {
-  font-size: 18px;
+  font-size: 2rem;
 }
 
 #legend > * {
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 #legend p, #legend h1 {
@@ -269,10 +269,9 @@ svg {
 }
 
 .buttons {
-  display: flex;
-  justify-content: flex-start;
+  display: inline;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items:center;
 }
 
 .buttons p {

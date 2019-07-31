@@ -217,21 +217,10 @@ padding = window.innerWidth * 0.08;
     })
 
     // Draw UI buttons
-
     let yButtons = d3.select('#bees-ui').append('div').classed('buttons', true);
-    yButtons.append('p').text('divide by').classed("button-label", true)
-    yButtons.append('button').text('type').attr('value', 'type').classed('d_sel', true)
-    // yButtons.append('button').text('location type').attr('value', 'location').classed('d_sel', true)
-    // yButtons.append('button').text('gender').attr('value', 'gender').classed('d_sel', true)
-    // yButtons.append('button').text('race').attr('value', 'race').classed('d_sel', true)
-
-    yButtons.append('button').text('X').classed('d_del', true).classed("disabled", true)
-
-    // let xButtons = d3.select('#killingbees-ui').append('div').classed('buttons', true);
-    // xButtons.append('p').text('place by').classed("button-label", true)
-    // xButtons.append('button').text('perpetrator age').attr('value', 'age').classed('b_sel', true)
-    // xButtons.append('button').text('total victims').attr('value', 'count').classed('b_sel', true)
-    // xButtons.append('button').text("date").attr('value', 'value').classed('b_sel', true).style('background','#0A0101').style("color", "white")
+    // yButtons.append('p').text('divide by').classed("button-label", true);
+    yButtons.append('button').text('type').attr('value', 'type').classed('d_sel', true);
+    yButtons.append('button').text('X').classed('d_del', true).classed("disabled", true);
 
     // make buttons interactive, vertical categories
     d3.selectAll('.d_sel').on('click', function(){
@@ -259,7 +248,6 @@ padding = window.innerWidth * 0.08;
 
       data_set = this.value;
 
-      console.log(data_set)
 
       if (data_set === "type") {
         d3.selectAll(".spaceY").text("Tipo di elenco")
