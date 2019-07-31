@@ -40,7 +40,7 @@ a.active {
   font-family: "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  text-decoration: underline;
+  border-bottom:3px solid #ff6346;
 }
 
 a:hover:not(.active) {
