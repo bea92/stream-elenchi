@@ -95,14 +95,13 @@ var graph = d3.csv(csvpath, function(data) {
 
 
   svg.append("g")
-      .attr("class", "x axis")
+      .attr("class", ".xAxis")
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis);
 
 
   svg.append("g")
-      .attr("class", "y axis")
-      .style("stroke", "black")
+      .attr("class", ".yAxis")
       .call(yAxis.orient("left"));
 
   svg.selectAll(".layer")

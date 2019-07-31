@@ -274,6 +274,12 @@ svg {
   shape-rendering: crispEdges;
 }
 
+.xaxis path,
+.xaxis line {
+  fill: none;
+  shape-rendering: crispEdges;
+}
+
 .domain {
   stroke: #777;
   display: none;
@@ -285,12 +291,12 @@ svg {
   sans-serif;
 }
 
-.y axis .tick line, .x axis .tick line {
+.yAxis .tick line, .xAxis .tick line {
   stroke-width: 0.5;
   stroke: #777;
 }
 
-.x axis .tick line {
+.xAxis .tick line {
   stroke-dasharray: 2,2;
 }
 
@@ -302,6 +308,10 @@ svg {
 .tick text {
   fill: #777;
 }
+
+
+
+
 
 .buttons {
   display: inline;
