@@ -1,8 +1,4 @@
-//
 
-
-// <script src="https://d3js.org/d3.v5.min.js"></script>
-// <script type="text/javascript">
     var margin = ({
         top: 20,
         right: 30,
@@ -28,18 +24,18 @@
 
 
         let color = d3.scaleOrdinal()
-  .domain(["frasi","misto","parole","sintagmi"])
-  .range(["#00095E","#0000ff","#ff0000","#7F0000"]);
+    .domain(data.columns.slice(1))
+    .range(["#282828"]);
+
 
         x = d3.scaleLinear()
-            .domain(d3.extent(data, d => d.date))
-            // .domain([0, d3.max(series, d => d3.max(d, d => d[1]))]).nice()
+            .domain(d3.extent(data, d => +d.date))
             .range([margin.left, width - margin.right])
 
 
         y = d3.scaleLinear()
             .domain(d3.extent(data, d => +d.value))
-            .domain([0, d3.max(series, d => d3.max(d, d => d[1]))]).nice()
+            // .domain([0, d3.max(series, d => d3.max(d, d => d[1]))]).nice()
             .range([height - margin.bottom, margin.top])
 
         var area = d3.area()
@@ -72,28 +68,27 @@
             .text(({
                 key
             }) => key);
+            
+            d3.select('.x.axis .domain').style('stroke-dasharray', function() {
+                var strokeDashArray = '';
+                for (var c = 1; c < ((x(1945) - margin.left) - (x(1943) - margin.left)); c += 3) {
+                    strokeDashArray += '1 2 '
+                }
+                strokeDashArray += ((x(1960) - margin.left) - (x(1945) - margin.left));
 
-        d3.select('.x.axis .domain').style('stroke-dasharray', function() {
-            var strokeDashArray = '';
-            for (var c = 1; c < ((x(1945) - margin.left) - (x(1943) - margin.left)); c += 3) {
-                strokeDashArray += '1 2 '
-            }
-            strokeDashArray += ((x(1960) - margin.left) - (x(1945) - margin.left));
+                for (var c = 1; c < ((x(1962) - margin.left) - (x(1960) - margin.left)); c += 3) {
+                    strokeDashArray += '1 2 '
+                }
+                strokeDashArray += ((x(1969) - margin.left) - (x(1962) - margin.left));
 
-            for (var c = 1; c < ((x(1962) - margin.left) - (x(1960) - margin.left)); c += 3) {
-                strokeDashArray += '1 2 '
-            }
-            strokeDashArray += ((x(1969) - margin.left) - (x(1962) - margin.left));
+                for (var c = 1; c < ((x(1971) - margin.left) - (x(1969) - margin.left)); c += 3) {
+                    strokeDashArray += '1 2 '
+                }
+                strokeDashArray += ((x(1986) - margin.left) - (x(1971) - margin.left));
+                return strokeDashArray
+            })
+            })
 
-            for (var c = 1; c < ((x(1971) - margin.left) - (x(1969) - margin.left)); c += 3) {
-                strokeDashArray += '1 2 '
-            }
-            strokeDashArray += ((x(1986) - margin.left) - (x(1971) - margin.left));
-            return strokeDashArray
-
-
-        })
-    })
 
     // interpolation function
 
