@@ -274,12 +274,6 @@ svg {
   shape-rendering: crispEdges;
 }
 
-.xaxis path,
-.xaxis line {
-  fill: none;
-  shape-rendering: crispEdges;
-}
-
 .domain {
   stroke: #777;
   display: none;
