@@ -1,5 +1,5 @@
 
-chart("data-old.csv", "orange");
+chart("data/data-old.csv", "orange");
 
 var datearray = [];
 var colorrange = [];
@@ -43,12 +43,12 @@ var z = d3.scale.ordinal()
 // //     .y0(function(d) { return y(d[0]); })
 // //     .y1(function(d) { return y(d[1]); });
 
-var xAxis = d3.svg.axis()
+var sxAxis = d3.svg.axis()
     .scale(x)
     .orient("bottom")
     .ticks(20);
 
-var yAxis = d3.svg.axis()
+var syAxis = d3.svg.axis()
     .scale(y)
     .ticks(20);
 
@@ -93,16 +93,26 @@ var graph = d3.csv(csvpath, function(data) {
       .attr("d", function(d) { return area(d.values); })
       .style("fill", function(d, i) { return z(i); });
 
+  //
+  // svg.append("g")
+  //     .attr("class", ".xAxis")
+  //     .attr("transform", "translate(0," + height + ")")
+  //     .call(xAxis);
+  //
+  //
+  // svg.append("g")
+  //     .attr("class", ".yAxis")
+  //     .call(yAxis.orient("left"));
 
   svg.append("g")
-      .attr("class", ".xAxis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
-
+  .call(dateAxis)
+  .classed("sxAxis", true)
+  .call(sxAxis);
 
   svg.append("g")
-      .attr("class", ".yAxis")
-      .call(yAxis.orient("left"));
+  .attr("transform","translate(" + ( width - padding ) + ",0)")
+  .classed("syAxis", true)
+  .call(syAxis.orient("left"));
 
   svg.selectAll(".layer")
     .attr("opacity", 1)
