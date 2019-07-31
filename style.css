@@ -134,6 +134,21 @@ color:#ff6346;
 color:#ff6346;
 }
 
+#schede{
+  height:100%;
+  margin:5rem;
+}
+
+#schede h2{
+font-size:1.5rem;
+color:#2f4f4f;
+}
+
+#schede p{
+color:#2f4f4f;
+}
+
+
 
 button {
   position: absolute;
@@ -270,12 +285,12 @@ svg {
   sans-serif;
 }
 
-.yAxis .tick line, .xAxis .tick line {
+.y axis .tick line, .x axis .tick line {
   stroke-width: 0.5;
   stroke: #777;
 }
 
-.xAxis .tick line {
+.x axis .tick line {
   stroke-dasharray: 2,2;
 }
 
@@ -399,6 +414,12 @@ button:focus {
   text-transform: uppercase;
 }
 
+footer{
+  height:100px;
+
+}
+
+
 /*bottom bar/*/
 .bottom-bar {
     position: fixed;
@@ -407,6 +428,7 @@ button:focus {
     height: 5vh;
     transition: bottom 0.35s cubic-bezier(.11,.31,.37,1);
 /*break*/
+
 
 @media screen and (min-width: 768px) {
 

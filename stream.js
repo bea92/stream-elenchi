@@ -101,7 +101,8 @@ var graph = d3.csv(csvpath, function(data) {
 
 
   svg.append("g")
-      .attr("class", "yAxis")
+      .attr("class", "y axis")
+      .style("stroke", "black")
       .call(yAxis.orient("left"));
 
   svg.selectAll(".layer")
