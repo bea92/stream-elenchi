@@ -7,7 +7,7 @@ var colorrange = [];
 
 function chart(csvpath, color) {
 if (color == "orange") {
-  colorrange = ["deeppink", "greenyellow", "aquamarine", "gold", "#000"];
+  colorrange = ["#0000ff", "#FF0000", "#006600", "#FFFF00", "#000"];
 }
 strokecolor = colorrange[4];
 

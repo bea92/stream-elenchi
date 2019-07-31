@@ -1,12 +1,12 @@
 
 html {
-  background: #fff;
+  background: #fbfdfd;
 }
 
 body {
-  background: #fff;
+  background: #fbfdfd;
   font-family: "HK Grotesk";
-  color: #000;
+  color: #2f4f4f;
   overflow-x: hidden;
   z-index: -2;
   font-size: 10px;
@@ -16,7 +16,7 @@ body {
 body p {
   font-family: "HK Grotesk";
   font-weight: 500;
-  color: #000;
+  color: #2f4f4f;
   font-size: 21px;
 }
 
@@ -28,7 +28,7 @@ section p{
 
 
 a {
-  color: aquamarine;
+  color: #2f4f4f;
   font-family: "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -36,7 +36,7 @@ a {
 }
 
 a.active {
-  color: deeppink;
+  color: #ff6346;
   font-family: "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -44,7 +44,7 @@ a.active {
 }
 
 a:hover:not(.active) {
-  color: aquamarine;
+  color: #ff6346;
   align-items: baseline;
 
 }
@@ -127,11 +127,11 @@ margin-top:2rem;
 
 #atlas h2{
 font-size:1.5rem;
-color:deeppink;
+color:#ff6346;
 }
 
 #atlas p{
-color:deeppink;
+color:#ff6346;
 }
 
 
@@ -176,8 +176,8 @@ hr {
 }
 
 ::selection {
-  background: aquamarine;
-  color: #000;
+  background: #ff6346;
+  color: #fff;
 }
 
 #legend > * {
@@ -215,7 +215,7 @@ hr {
   width: 1rem;
   height: 0.6rem;
   margin-right: 0.5rem;
-  background: greenyellow;
+  background: #FF0000;
 }
 
 .frasi::before {
@@ -224,7 +224,7 @@ hr {
   width: 1rem;
   height: 0.6rem;
   margin-right: 0.5rem;
-  background: deeppink;
+  background: #0000ff;
 }
 
 
@@ -234,7 +234,7 @@ hr {
   width: 1rem;
   height: 0.6rem;
   margin-right: 0.5rem;
-  background: gold;
+  background: #FFFF00;
 }
 
 .parole::before {
@@ -243,7 +243,7 @@ hr {
   width: 1rem;
   height: 0.6rem;
   margin-right: 0.5rem;
-  background: aquamarine;
+  background: #006600;
 }
 
 
@@ -399,6 +399,13 @@ button:focus {
   text-transform: uppercase;
 }
 
+/*bottom bar/*/
+.bottom-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 5vh;
+    transition: bottom 0.35s cubic-bezier(.11,.31,.37,1);
 /*break*/
 
 @media screen and (min-width: 768px) {

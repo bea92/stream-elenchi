@@ -15,7 +15,7 @@ padding = window.innerWidth * 0.08;
     // various scales, could be optimized
     let colors = d3.scaleOrdinal()
     .domain(["misto", "frasi", "sintagmi", "parole"])
-    .range(["greenyellow","deeppink","gold","aquamarine"]);
+    .range(["#FF0000","#0000ff","#FFFF00","#006600"]);
     // let colors = d3.scaleOrdinal()
     // .domain(data.map(function(d) {
     //   return d.type
