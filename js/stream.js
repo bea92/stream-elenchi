@@ -12,9 +12,9 @@
     var width = document.body.clientWidth - margin.left - margin.right;
     var height = 300 - margin.top - margin.bottom;
 
-    var x, y;
+    var sx, sy;
 
-    var stream = d3.select('stream')
+    var stream = d3.select('#stream')
         .attr('width', width + margin.left + margin.right)
         .attr('height', height + margin.top + margin.bottom);
 
@@ -34,12 +34,12 @@
     .range(["#282828"]);
 
 
-        x = d3.scaleLinear()
+        sx = d3.scaleLinear()
             .domain(d3.extent(data, d => +d.date))
             .range([margin.left, width - margin.right])
 
 
-        y = d3.scaleLinear()
+        sy = d3.scaleLinear()
             .domain(d3.extent(data, d => +d.value))
             // .domain([0, d3.max(series, d => d3.max(d, d => d[1]))]).nice()
             .range([height - margin.bottom, margin.top])
