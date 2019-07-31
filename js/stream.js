@@ -14,7 +14,7 @@
 
     var sx, sy;
 
-    var stream = d3.select('#stream')
+    var svg = d3.select('svg')
         .attr('width', width + margin.left + margin.right)
         .attr('height', height + margin.top + margin.bottom);
 
@@ -25,8 +25,6 @@
         })
         var series = d3.stack().keys(data.columns.slice(1))(data)
         // console.log(series)
-
-        let parseDate = d3.timeParse("%Y");
 
 
         let color = d3.scaleOrdinal()
@@ -50,18 +48,18 @@
             .y1(d => y(d[1]))
             .curve(curveSankey);
 
-        var xAxis = stream.append('g')
+        var xAxis = svg.append('g')
             .classed('x axis', true)
             .attr("transform", `translate(0,${height - margin.bottom})`)
             .call(d3.axisBottom(x).ticks(width / 50).tickSizeOuter(0.0))
 
 
-        var yAxis = stream.append('g')
+        var yAxis = svg.append('g')
             .classed('y axis', true)
             .attr("transform", `translate(${margin.left},0)`)
             .call(d3.axisRight(y))
 
-        stream.append("g").selectAll("path")
+        svg.append("g").selectAll("path")
             .data(series)
             .join("path")
             .attr("fill", ({
