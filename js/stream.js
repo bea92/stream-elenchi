@@ -12,9 +12,9 @@
     var width = document.body.clientWidth - margin.left - margin.right;
     var height = 300 - margin.top - margin.bottom;
 
-    var sx, sy;
+    var x, y;
 
-    var svg = d3.select('svg')
+    var stream = d3.select('#stream')
         .attr('width', width + margin.left + margin.right)
         .attr('height', height + margin.top + margin.bottom);
 
@@ -28,18 +28,18 @@
 
 
         let color = d3.scaleOrdinal()
-    .domain(["value"])
-    .range(["#282828"]);
+  .domain(["frasi","misto","parole","sintagmi"])
+  .range(["#00095E","#0000ff","#ff0000","#7F0000"]);
 
-
-        sx = d3.scaleLinear()
-            .domain(d3.extent(data, d => +d.date))
+        x = d3.scaleLinear()
+            .domain(d3.extent(data, d => d.date))
+            // .domain([0, d3.max(series, d => d3.max(d, d => d[1]))]).nice()
             .range([margin.left, width - margin.right])
 
 
-        sy = d3.scaleLinear()
+        y = d3.scaleLinear()
             .domain(d3.extent(data, d => +d.value))
-            // .domain([0, d3.max(series, d => d3.max(d, d => d[1]))]).nice()
+            .domain([0, d3.max(series, d => d3.max(d, d => d[1]))]).nice()
             .range([height - margin.bottom, margin.top])
 
         var area = d3.area()
@@ -48,18 +48,18 @@
             .y1(d => y(d[1]))
             .curve(curveSankey);
 
-        var xAxis = svg.append('g')
+        var xAxis = stream.append('g')
             .classed('x axis', true)
             .attr("transform", `translate(0,${height - margin.bottom})`)
             .call(d3.axisBottom(x).ticks(width / 50).tickSizeOuter(0.0))
 
 
-        var yAxis = svg.append('g')
+        var yAxis = stream.append('g')
             .classed('y axis', true)
             .attr("transform", `translate(${margin.left},0)`)
             .call(d3.axisRight(y))
 
-        svg.append("g").selectAll("path")
+        stream.append("g").selectAll("path")
             .data(series)
             .join("path")
             .attr("fill", ({
@@ -184,7 +184,7 @@
 // // //     .y0(function(d) { return y(d[0]); })
 // // //     .y1(function(d) { return y(d[1]); });
 //
-// var sxAxis = d3.svg.axis()
+// var sxAxis = d3.stream.axis()
 //     .scale(x)
 //     .orient("bottom")
 //     .ticks(20);
