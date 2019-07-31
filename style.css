@@ -278,38 +278,42 @@ svg {
   margin-bottom: 2rem;
 }
 
-.axis path,
-.axis line {
+
+#bees .domain{
+  stroke:#fff;
+}
+#bees .axis path,
+#bees .axis line {
   fill: none;
   shape-rendering: crispEdges;
 }
 
-.domain {
+/* .domain {
   stroke: #777;
   display: none;
-}
+} */
 
-.tick text {
+#bees .tick text {
   font-size: 0.7rem;
   font-family: "HK Grotesk",
   sans-serif;
 }
 
-.yAxis .tick line, .xAxis .tick line {
+#bees .yAxis .tick line, .xAxis .tick line {
   stroke-width: 0.5;
   stroke: #777;
 }
 
-.xAxis .tick line {
+#bees .xAxis .tick line {
   stroke-dasharray: 2,2;
 }
 
-.timelineAxis .tick line {
+#bees .timelineAxis .tick line {
   stroke-dasharray: 2,2;
   stroke: #777;
 }
 
-.tick text {
+#bees .tick text {
   fill: #777;
 }
 
@@ -324,7 +328,7 @@ svg {
   margin-right: 0.5rem;
 }
 
-.xAxis .tick line {
+#bees .xAxis .tick line {
   stroke-width: 1;
   stroke: #777;
 }
@@ -431,15 +435,29 @@ footer{
 }
 
 
-/*bottom bar/*/
+
 .bottom-bar {
     position: fixed;
     left: 0;
     bottom: 0;
     height: 5vh;
-    transition: bottom 0.35s cubic-bezier(.11,.31,.37,1);
-/*break*/
+    transition: bottom 0.35s cubic-bezier(.11,.31,.37,1);}
 
+
+
+    #stream .area {
+    fill: steelblue;
+    clip-path: url(#clip);
+    }
+
+    #stream .zoom {
+    cursor: move;
+    fill: none;
+    pointer-events: all;
+    }
+
+    #stream .x.axis .domain {
+    }
 
 @media screen and (min-width: 768px) {
 

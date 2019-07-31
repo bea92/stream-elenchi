@@ -24,19 +24,16 @@
 
 
         let color = d3.scaleOrdinal()
-    .domain(data.columns.slice(1))
-    .range(["#282828"]);
+        .domain(["misto", "frasi", "sintagmi", "parole"])
+        .range(["#FF0000","#0000ff","#FFFF00","#006600"]);
 
+    x = d3.scaleLinear()
+              .domain(d3.extent(data, d => d.date))
+              .range([margin.left, width - margin.right])
 
-        x = d3.scaleLinear()
-            .domain(d3.extent(data, d => +d.date))
-            .range([margin.left, width - margin.right])
-
-
-        y = d3.scaleLinear()
-            .domain(d3.extent(data, d => +d.value))
-            // .domain([0, d3.max(series, d => d3.max(d, d => d[1]))]).nice()
-            .range([height - margin.bottom, margin.top])
+          y = d3.scaleLinear()
+              .domain([0, d3.max(series, d => d3.max(d, d => d[1]))]).nice()
+              .range([height - margin.bottom, margin.top])
 
         var area = d3.area()
             .x(d => x(+d.data.date))
@@ -53,7 +50,7 @@
         var yAxis = stream.append('g')
             .classed('y axis', true)
             .attr("transform", `translate(${margin.left},0)`)
-            .call(d3.axisRight(y))
+            .call(d3.axisLeft(y))
 
         stream.append("g").selectAll("path")
             .data(series)
@@ -68,7 +65,7 @@
             .text(({
                 key
             }) => key);
-            
+
             d3.select('.x.axis .domain').style('stroke-dasharray', function() {
                 var strokeDashArray = '';
                 for (var c = 1; c < ((x(1945) - margin.left) - (x(1943) - margin.left)); c += 3) {
